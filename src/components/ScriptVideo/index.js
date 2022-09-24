@@ -19,14 +19,13 @@ export default function ScriptVideo({ videoChannel, scriptVideo }) {
             if (document.getElementsByTagName("iframe")[0]) {
               document.getElementsByTagName("iframe")[0].remove();
             }
-            typeof Twitch !== "undefined"
-              ? new Twitch.Player("video", scriptVideo.options)
-              : setLoading(false);
+            typeof Twitch !== "undefined" &&
+              new Twitch.Player("video", scriptVideo.options);
             break;
           default:
             break;
         }
-      }, 3000);
+      }, 8000);
     }
   }, [videoChannel, loading]);
 
