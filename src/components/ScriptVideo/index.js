@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import styles from "./ScriptVideo.module.scss";
 import Script from "next/script";
 import { useState } from "react";
+
 // https://dev.twitch.tv/docs/embed/video-and-clips
 
 export default function ScriptVideo({ videoChannel, scriptVideo }) {
@@ -12,17 +13,19 @@ export default function ScriptVideo({ videoChannel, scriptVideo }) {
   );
   useEffect(() => {
     if (!loading) {
-      switch (type) {
-        case "twitch":
-          if (document.getElementsByTagName("iframe")[0]) {
-            document.getElementsByTagName("iframe")[0].remove();
-          }
-          typeof Twitch !== "undefined" &&
-            new Twitch.Player("video", scriptVideo.options);
-          break;
-        default:
-          break;
-      }
+      window.setTimeout(() => {
+        switch (type) {
+          case "twitch":
+            if (document.getElementsByTagName("iframe")[0]) {
+              document.getElementsByTagName("iframe")[0].remove();
+            }
+            typeof Twitch !== "undefined" &&
+              new Twitch.Player("video", scriptVideo.options);
+            break;
+          default:
+            break;
+        }
+      }, 3000);
     }
   }, [videoChannel, loading]);
 
