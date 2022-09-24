@@ -19,8 +19,9 @@ export default function ScriptVideo({ videoChannel, scriptVideo }) {
             if (document.getElementsByTagName("iframe")[0]) {
               document.getElementsByTagName("iframe")[0].remove();
             }
-            typeof Twitch !== "undefined" &&
-              new Twitch.Player("video", scriptVideo.options);
+            typeof Twitch !== "undefined"
+              ? new Twitch.Player("video", scriptVideo.options)
+              : setLoading(false);
             break;
           default:
             break;
