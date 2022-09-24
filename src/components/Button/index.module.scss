@@ -1,0 +1,19 @@
+.btn {
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+.btn:hover {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-size: 17px;
+  padding: 7px;
+}
+@media (max-width: 580px) {
+  .btn {
+    width: 90%;
+  }
+}

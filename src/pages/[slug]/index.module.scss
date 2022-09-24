@@ -1,0 +1,17 @@
+.container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    object-fit: contain;
+  }
+  .pageLogo {
+    position: fixed;
+    opacity: 0.7;
+    top: 10px;
+    left: 10px;
+  }
+}

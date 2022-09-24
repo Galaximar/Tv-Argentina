@@ -1,0 +1,39 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": ["plugin:react/recommended", "next/core-web-vitals", "airbnb"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "indent": "off",
+    "no-console": "off",
+    "no-use-before-define": "warn",
+    "operator-linebreak": "off",
+    "no-param-reassign": "off",
+    "react/jsx-indent": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-indent-props": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
+    "linebreak-style": "off",
+    "no-underscore-dangle": "off",
+    "no-shadow": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "arrow-body-style": "off",
+    "object-curly-newline": "off",
+    "import/no-unresolved": "off",
+    "react/button-has-type": "off",
+    "jsx-a11y/interactive-supports-focus": "off",
+    "jsx-quotes": "off"
+  }
+}
