@@ -3,9 +3,15 @@
     width: 80vw;
     height: 50vw;
   }
-}
-.loading {
-  width: 1000px;
-  height: 500px;
-  background-color: black;
+  .loading {
+    width: 80vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: black;
+    z-index: 100000;
+  }
 }
