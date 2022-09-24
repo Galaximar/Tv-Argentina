@@ -9,6 +9,7 @@ import styles from "./index.module.scss";
 import { MdMonitor } from "react-icons/md";
 import Button from "../../components/Button";
 import Head from "next/head";
+import { useEffect } from "react";
 
 // https://dev.twitch.tv/docs/embed/video-and-clips
 
@@ -41,7 +42,7 @@ export default function ViewChannel({
             display: "flex",
             flexDirection: "column",
             gap: "20px",
-            minHeight: "620px",
+            minHeight: "60vw",
           }}
         >
           <ScriptVideo scriptVideo={scriptVideo} videoChannel={videoChannel} />
