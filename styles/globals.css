@@ -8,3 +8,7 @@ body {
   background: rgb(12, 12, 12);
   overflow-x: hidden;
 }
+
+p {
+  margin: 0;
+}

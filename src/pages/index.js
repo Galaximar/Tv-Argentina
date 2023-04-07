@@ -1,6 +1,7 @@
 import Head from "next/head";
 import ChannelsList from "../components/ChannelsList";
 import Subtitles from "../components/Subtitles";
+import styles from "./index.module.scss";
 
 export default function Home() {
   return (
@@ -12,6 +13,16 @@ export default function Home() {
       </Head>
       <Subtitles label="Lista de canales" />
       <ChannelsList />
+      <Subtitles label="Acerca de" />
+      <p className={styles.about}>
+        Contenido utilizado únicamente como medio de estudio. Se utilizaron
+        canales de Twitch y Youtube, en los cuales se insertaron en la página
+        mediante iframes.
+      </p>
+      <p className={styles.about}>
+        Es posible que el video no funcione corréctamente. En ese caso, vea la
+        emisión oficial.
+      </p>
     </div>
   );
 }

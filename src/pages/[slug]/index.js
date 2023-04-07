@@ -9,9 +9,6 @@ import styles from "./index.module.scss";
 import { MdMonitor } from "react-icons/md";
 import Button from "../../components/Button";
 import Head from "next/head";
-import { useEffect } from "react";
-
-// https://dev.twitch.tv/docs/embed/video-and-clips
 
 export default function ViewChannel({
   name,
@@ -19,6 +16,7 @@ export default function ViewChannel({
   id,
   videoChannel,
   scriptVideo,
+  oficcialLink,
 }) {
   return (
     <>
@@ -37,6 +35,11 @@ export default function ViewChannel({
         <Image src={img.url} width={100} height={40} />
 
         <Subtitles label={name} />
+        <p>Contenido utilizado únicamente como medio de estudio.</p>
+        <p style={{ marginBottom: "10px" }}>
+          Es posible que el video no funcione corréctamente. En ese caso, vea la
+          emisión oficial.
+        </p>
         <div
           style={{
             display: "flex",

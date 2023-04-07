@@ -42,7 +42,7 @@ export const CHANNELS = [
     id: "telefe",
     name: "Telefe",
     img: {
-      url: "https://telefe-static.akamaized.net/assets/telefe/4.06.04/images/logo-telefe.a8789604e7c2cd5739ea1b34efc9481a.png",
+      url: "/telefe.webp",
       alt: "Telefe logo",
     },
     videoChannel: {
@@ -68,7 +68,7 @@ export const CHANNELS = [
     id: "trece",
     name: "Trece",
     img: {
-      url: "https://cdn.eltrecetv.com.ar/sites/eltrecetv/themes/c13/images/logo.svg",
+      url: "/eltrece.png",
       alt: "El trece logo",
     },
     videoChannel: {
